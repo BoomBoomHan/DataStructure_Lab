@@ -15,6 +15,7 @@
     <setting file="file://C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/vector" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stdlib.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DataStructure_Lab/Enums/EnumLibrary.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/string" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/yvals_core.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -28,8 +29,10 @@
       <option value="$PROJECT_DIR$/DataStructure_Lab/Enums/EnumLibrary.h" />
       <option value="$PROJECT_DIR$/DataStructure_Lab/Classes/ArrayIterator.h" />
       <option value="$PROJECT_DIR$/DataStructure_Lab/Structs/ArrayIterator.h" />
-      <option value="$PROJECT_DIR$/DataStructure_Lab/DataStructure_Lab.cpp" />
       <option value="$PROJECT_DIR$/DataStructure_Lab/Structs/Array.h" />
+      <option value="$PROJECT_DIR$/DataStructure_Lab/Structs/Individual.h" />
+      <option value="$PROJECT_DIR$/DataStructure_Lab/Structs/Individual.cpp" />
+      <option value="$PROJECT_DIR$/DataStructure_Lab/DataStructure_Lab.cpp" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1yWWb5DFnh5RxaN1LL3ZYb9izlU" />

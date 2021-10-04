@@ -12,7 +12,6 @@
 
 /**
  *@brief 模板结构体：数组(链表)
- *@note 尚未完工
  */
 template<typename T>
 struct TArray
@@ -454,6 +453,9 @@ private:
     
 };
 
+/**
+ *@brief 模板结构体：链表迭代器
+ */
 template<typename T>
 struct TArrayIterator
 {
@@ -464,39 +466,69 @@ struct TArrayIterator
     */
     FNode* CurrentNode;
 
+    /**
+     *@brief 构造函数。
+     *@param inArray 输入的链表
+     *@param inMethod 迭代的方式
+     *@note 迭代方式的不同会导致构造不同的迭代器。顺序遍历则迭代器在Head，否则在Tair。
+     */
     TArrayIterator(const TArray<T>& inArray, ETraversalMethod inMethod = Sequential)
         :CurrentNode(inArray.GetBeginNodeWithMethod(inMethod))
     {
         
     }
 
+    /**
+     *@brief 转换为原始的节点。
+     *@return 当前指向的节点
+     */
     FNode*& ToRawNode()
     {
         return CurrentNode;
     }
 
+    /**
+     *@brief 迭代器是否有效。
+     *@return 当前的节点是否为空指针
+     */
     bool IsValid() const
     {
         return (CurrentNode != nullptr);
     }
 
+    /**
+     *@brief 迭代器向后移动。
+     *@return 指向的节点的Next节点
+     */
     FNode* operator ++()
     {
         CurrentNode = CurrentNode->Next;
         return CurrentNode;
     }
 
+    /**
+     *@brief 迭代器向前移动。
+     *@return 指向的节点的Last节点
+     */
     FNode* operator --()
     {
         CurrentNode = CurrentNode->Last;
         return CurrentNode;
     }
 
+    /**
+     *@brief 解指针(实际上解的是节点的指针)。
+     *@return 当前的元素对象引用
+     */
     T& operator *()
     {
         return CurrentNode->Element;
     }
 
+    /**
+     *@brief 箭头操作符，有解指针操作。
+     *@warning 有效性待定!
+     */
     T& operator ->()
     {
         return CurrentNode->Element;

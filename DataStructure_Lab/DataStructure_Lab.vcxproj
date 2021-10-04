@@ -228,6 +228,7 @@
       <SDLCheck>true</SDLCheck>
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
+    <ClCompile Include="Structs\Individual.cpp" />
     <ClCompile Include="Structs\LinkNode.cpp" />
     <ClCompile Include="Structs\Array.cpp" />
     <ClCompile Include="tst.cpp" />
@@ -236,6 +237,7 @@
     <ClInclude Include="Enums\EnumLibrary.h" />
     <ClInclude Include="FunctionLibrarys\VaragesFunLibrary.h" />
     <ClInclude Include="Structs\ArrayIterator.h" />
+    <ClInclude Include="Structs\Individual.h" />
     <ClInclude Include="Structs\LinkNode.h" />
     <ClInclude Include="Structs\Array.h" />
   </ItemGroup>

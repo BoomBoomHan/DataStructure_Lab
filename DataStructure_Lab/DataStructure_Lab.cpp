@@ -1,4 +1,5 @@
 ﻿#include "Structs/Array.h"
+#include "Structs/Individual.h"
 #include <iostream>
 using namespace std;
 
@@ -42,7 +43,7 @@ ReturnType RandomNumberInRange(ParamType inMin, ParamType inMax)
 
 int main()
 {
-    TArray<int> arr(1, 2);
+    /*TArray<int> arr(1, 2);
     arr.Add(3);
     arr.Add(-1);
     bool addUniqueSuccess;
@@ -54,13 +55,14 @@ int main()
     arr.ForEach([&](TArrayIterator<int> it)->void
     {
         sum += *it;
-    });
+    });*/
     /*arr.PrintF();
     cin.get();
     bool removeSuccess;
     arr.Remove(2, removeSuccess);
     arr.PrintF();*/
-    //int twoIndex;
-    cout << sum << endl;
+    //cout << sum << endl;
+    FIndividual individual(1, 1);
+    cout << individual.ToString(false) << endl;
     return 0;
 }
