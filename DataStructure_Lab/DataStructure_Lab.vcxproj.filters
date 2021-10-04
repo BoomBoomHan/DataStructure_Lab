@@ -21,12 +21,27 @@
     <ClCompile Include="Structs\LinkNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FunctionLibrarys\VaragesFunLibrary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Structs\Array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Enums\Enums.h">
+    <ClInclude Include="Structs\LinkNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Structs\LinkNode.h">
+    <ClInclude Include="Enums\EnumLibrary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionLibrarys\VaragesFunLibrary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Structs\Array.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

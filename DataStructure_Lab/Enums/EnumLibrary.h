@@ -27,3 +27,9 @@ enum ELinkNodeEqual
      */
     NextPtrRequired
 };
+
+enum ENodeDirect
+{
+    HeadDirect,
+    TairDirect
+};

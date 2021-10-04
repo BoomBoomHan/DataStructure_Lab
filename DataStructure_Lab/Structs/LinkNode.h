@@ -25,12 +25,26 @@ struct TLinkNode
     TLinkNode* Next;
 
     /**
+    *@brief 构造函数，构造一个有元素值，两个指针域的节点
+    *@param inValue 输入元素对象引用
+    *@param lastPtr Last指针
+    *@param nextPtr Next指针
+    */
+    TLinkNode(const T& inValue, TLinkNode* lastPtr = nullptr, TLinkNode* nextPtr = nullptr)
+    :Element(inValue),
+    Last(lastPtr),
+    Next(nextPtr)
+    {
+
+    }
+
+    /**
      *@brief 构造函数，构造一个有元素值，两个指针域的节点
      *@param inValue 输入元素值
      *@param lastPtr Last指针
      *@param nextPtr Next指针
      */
-    TLinkNode(T inValue = T(0), TLinkNode* lastPtr = nullptr, TLinkNode* nextPtr = nullptr)
+    TLinkNode(T&& inValue = T(0), TLinkNode* lastPtr = nullptr, TLinkNode* nextPtr = nullptr)
     :Element(inValue),
     Last(lastPtr),
     Next(nextPtr)
@@ -64,11 +78,35 @@ struct TLinkNode
     }
 
     /**
+    *@brief 运算符=(对于另一个节点)
+    *@param another 另一个节点右值引用
+    *@return 自身对象引用
+    */
+    TLinkNode& operator =(TLinkNode&& another) noexcept
+    {
+        Element = another.Element;
+        Last = another.Last;
+        Next = another.Next;
+        return *this;
+    }
+
+    /**
+    *@brief 运算符=(对于元素值)
+    *@param elem 赋值的元素对象引用
+    *@return 自身对象引用
+    */
+    TLinkNode& operator =(const T& elem)
+    {
+        Element = elem;
+        return *this;
+    }
+
+    /**
      *@brief 运算符=(对于元素值)
      *@param elem 赋值的元素值
      *@return 自身对象引用
      */
-    TLinkNode& operator =(T& elem)
+    TLinkNode& operator =(T&& elem)
     {
         Element = elem;
         return *this;
@@ -92,7 +130,7 @@ struct TLinkNode
      *@return 若此节点数据域与输入值相同则返回真，否则返回假
      *@note 若模板元素类型是struct或class，则必须重载运算符==，否则无法调用!!!!!!
      */
-    bool operator ==(T& elem)
+    bool operator ==(T&& elem)
     {
         return (Element == elem);
     }
