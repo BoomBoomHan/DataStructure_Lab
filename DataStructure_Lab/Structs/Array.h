@@ -451,6 +451,7 @@ private:
     }
 
 #pragma endregion PrivateFunctions
+    
 };
 
 template<typename T>
