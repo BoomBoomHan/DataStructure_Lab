@@ -15,14 +15,14 @@ struct FIndividual
     /**
      *指数
      */
-    double Exponent;
+    int Exponent;
 
     /**
      *@brief 构造函数。
      *@param coef 系数
      *@param expo 指数
      */
-    FIndividual(const double coef = 1, const double expo = 0);
+    FIndividual(const double coef = 1, const int expo = 0);
 
     /**
      *@brief 析构函数。
@@ -36,4 +36,34 @@ struct FIndividual
      *@return 一个成型的字符串
      */
     std::string ToString(bool isSignedIfPositive = true, char inDisplayChar = 'x') const;
+
+    /**
+     *@brief 指数是否相等。
+     *@param another 另一个单项式对象引用
+     *@return 两者的指数是否相等
+     */
+    bool IsExponentEqualTo(const FIndividual& another) const;
+
+    /**
+     *@brief 指数是否相等。
+     *@param another 另一个单项式右值引用
+     *@return 两者的指数是否相等
+     */
+    bool IsExponentEqualTo(FIndividual&& another) const;
+
+
+    bool IsExponentLargerThan(const FIndividual& another) const;
+
+
+    bool IsExponentLargerThan(FIndividual&& another) const;
+
+
+    bool IsExponentSmallerThan(const FIndividual& another) const;
+
+
+    bool IsExponentSmallerThan(FIndividual&& another) const;
+
+ 
+    bool operator ==(const FIndividual& another);
+ 
 };

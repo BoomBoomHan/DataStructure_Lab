@@ -1,68 +1,60 @@
-﻿#include "Structs/Array.h"
-#include "Structs/Individual.h"
+﻿#include "Classes/Polynomial.h"
 #include <iostream>
+#include "FunctionLibrarys/DataHandleStatics.h"
 using namespace std;
 
-/*
-double RandomProperFraction();
-
-template<typename ReturnType, typename ParamType>
-ReturnType RandomNumberInRange(ParamType inMin, ParamType inMax);*/
-
-/**
- * @ brief 生成一个在一定区间内的随机数。
- * @ param inMin 区间最小值
- * @ param inMax 区间最大值
- * @ return 基于最小值、最大值之间的随机数(任意类型)
- * @ note min,max不得超过-10^9~10^9范围。
- */ 
-/*template<typename ReturnType, typename ParamType>
-ReturnType RandomNumberInRange(ParamType inMin, ParamType inMax)
+/*class TestClass
 {
-    return ReturnType(inMin + (inMax - inMin) * RandomProperFraction());
-    
-}*/
-
-/**
- * @ brief 生成一个0至1间的小数
- */
-/*double RandomProperFraction()
-{
-    const int randMax = 1000;
-    auto Random = [randMax]()->double
+public:
+    void TestFunction()
     {
-        return rand() % randMax;
-    };
-    return (Random() / randMax + Random() / randMax / randMax);
-}*/
+        
+    }
+};
 
+//模板指针结构体，想要拥有与原始指针相同的用法
+template<typename T>
+struct TObjectPtr
+{
+    T* rawPtr;//原始指针
 
+    T& operator *()
+    {
+        return (*rawPtr);
+    }
 
+    T* operator =(T* inPtr)
+    {
+        rawPtr = inPtr;
+        return rawPtr;
+    }
 
-
+    T& operator ->()
+    {
+        return (*rawPtr);
+    }
+};*/
 
 int main()
 {
-    /*TArray<int> arr(1, 2);
-    arr.Add(3);
-    arr.Add(-1);
-    bool addUniqueSuccess;
-    int val = 888;
-    arr.Add(val);
-    arr.RemoveByIndex(arr.FindIndex(2));
-    arr.AddUnique(val, addUniqueSuccess);
-    int sum = 0;
-    arr.ForEach([&](TArrayIterator<int> it)->void
-    {
-        sum += *it;
-    });*/
-    /*arr.PrintF();
-    cin.get();
-    bool removeSuccess;
-    arr.Remove(2, removeSuccess);
-    arr.PrintF();*/
-    //cout << sum << endl;
-    FIndividual individual(1, 1);
-    cout << individual.ToString(false) << endl;
-    return 0;
+    /*TArray<FIndividual> individuals;
+    individuals.Add(FIndividual(1,3));
+    individuals.Add(FIndividual(2.14, 2));
+    FIndividual indi(2.732, 8);
+    //individuals.Add(indi);
+    individuals.Insert(indi, individuals.CreateIterator());
+    UPolynomial* polynomial = new UPolynomial(individuals);
+    polynomial->PrintF();
+    cout << individuals.GetSize() << endl;*/
 }
+
+
+
+
+
+
+/*TestClass* class1 = new TestClass();
+class1->TestFunction();
+    
+TObjectPtr<TestClass> class2 = new TestClass();
+class2->TestFunction();*/

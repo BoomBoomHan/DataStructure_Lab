@@ -158,7 +158,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Classes\Polynomial.cpp" />
     <ClCompile Include="DataStructure_Lab.cpp" />
+    <ClCompile Include="FunctionLibrarys\DataHandleStatics.cpp" />
     <ClCompile Include="FunctionLibrarys\VaragesFunLibrary.cpp" />
     <ClCompile Include="Structs\ArrayIterator.cpp">
       <AssemblerOutput>NoListing</AssemblerOutput>
@@ -234,15 +236,14 @@
     <ClCompile Include="tst.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Classes\Polynomial.h" />
     <ClInclude Include="Enums\EnumLibrary.h" />
+    <ClInclude Include="FunctionLibrarys\DataHandleStatics.h" />
     <ClInclude Include="FunctionLibrarys\VaragesFunLibrary.h" />
     <ClInclude Include="Structs\ArrayIterator.h" />
     <ClInclude Include="Structs\Individual.h" />
     <ClInclude Include="Structs\LinkNode.h" />
     <ClInclude Include="Structs\Array.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

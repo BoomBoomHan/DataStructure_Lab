@@ -14,6 +14,8 @@
     <setting file="file://C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/initializer_list" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/vector" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stdlib.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/stdio.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt/ctype.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DataStructure_Lab/Enums/EnumLibrary.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/string" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/include/yvals_core.h" root0="SKIP_HIGHLIGHTING" />
@@ -29,9 +31,13 @@
       <option value="$PROJECT_DIR$/DataStructure_Lab/Enums/EnumLibrary.h" />
       <option value="$PROJECT_DIR$/DataStructure_Lab/Classes/ArrayIterator.h" />
       <option value="$PROJECT_DIR$/DataStructure_Lab/Structs/ArrayIterator.h" />
-      <option value="$PROJECT_DIR$/DataStructure_Lab/Structs/Array.h" />
-      <option value="$PROJECT_DIR$/DataStructure_Lab/Structs/Individual.h" />
+      <option value="$PROJECT_DIR$/DataStructure_Lab/Classes/Polynomial.h" />
+      <option value="$PROJECT_DIR$/DataStructure_Lab/Classes/Polynomial.cpp" />
       <option value="$PROJECT_DIR$/DataStructure_Lab/Structs/Individual.cpp" />
+      <option value="$PROJECT_DIR$/DataStructure_Lab/Structs/Individual.h" />
+      <option value="$PROJECT_DIR$/DataStructure_Lab/Structs/Array.h" />
+      <option value="$PROJECT_DIR$/DataStructure_Lab/FunctionLibrarys/DataHandleStatics.h" />
+      <option value="$PROJECT_DIR$/DataStructure_Lab/FunctionLibrarys/DataHandleStatics.cpp" />
       <option value="$PROJECT_DIR$/DataStructure_Lab/DataStructure_Lab.cpp" />
     </changedPaths>
   </component>
@@ -46,6 +52,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.C++" />
+    <property name="threadsIsVisibleKey" value="false" />
   </component>
   <component name="RunManager">
     <configuration name="DataStructure_Lab" type="CppProject" factoryName="C++ Project">
